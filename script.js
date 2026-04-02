@@ -179,6 +179,8 @@ async function generateMessage() {
     document.getElementById('result-state').classList.add('hidden');
     document.getElementById('error-state').classList.add('hidden');
 
+    console.log(formData);
+
     try {
         const response = await fetch('https://project-dg73v.vercel.app/api/OpenApiIntegration', {
             method: 'POST',
